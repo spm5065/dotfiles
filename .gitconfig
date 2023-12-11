@@ -1,0 +1,32 @@
+
+[color]
+    diff=auto
+    status=auto
+    branch=auto
+    ui=true
+    pager=true
+[alias]
+    lg = "!git --no-pager log --color --graph --pretty=format:'%Cred%h%Creset-%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit $1 | less -R"
+    fp = "! branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null);\
+            if [[ HEAD != \"$branch\" ]]; then \
+                git push -u $USER $branch; \
+            else \
+                echo \"Refusing to push, not a branch!\"; \
+            fi \
+        "
+    quick-status = status --ignore-submodule=dirty
+[config "status"]
+    changed=blue
+[merge]
+    tool=vimdiff
+[core]
+	editor = vim
+[push]
+	autoSetupRemote = true
+[pull]
+    rebase = true
+
+
+# Separate user config file
+[include]
+    path = ~/.gituserconfig
