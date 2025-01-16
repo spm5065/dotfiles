@@ -9,3 +9,8 @@ tnoremap <Esc> <C-\><C-n>
 autocmd TermOpen * setlocal nonumber norelativenumber
 
 source ~/.vimrc
+
+if has('nvim-0.8')
+    source ~/.config/nvim/lsp.lua
+end
+
