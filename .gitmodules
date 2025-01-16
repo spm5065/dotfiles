@@ -13,3 +13,24 @@
 [submodule ".vim/pack/downloads/start/vim-polyglot"]
 	path = .vim/pack/downloads/start/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot
+[submodule "nvim-lspconfig"]
+	path = .vim/pack/downloads/start/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig.git
+[submodule "mason"]
+	path = .vim/pack/downloads/start/mason.nvim
+	url = https://github.com/williamboman/mason.nvim
+[submodule "mason-lspconfig"]
+	path = .vim/pack/downloads/start/mason-lspconfig.nvim
+	url = https://github.com/williamboman/mason-lspconfig.nvim
+[submodule "nvim-cmp"]
+	path = .vim/pack/downloads/start/nvim-cmp
+	url = https://github.com/hrsh7th/nvim-cmp
+[submodule "cmp-nvim-lsp"]
+	path = .vim/pack/downloads/start/cmp-nvim-lsp
+	url = https://github.com/hrsh7th/cmp-nvim-lsp
+[submodule "LuaSnip"]
+	path = .vim/pack/downloads/start/LuaSnip
+	url = https://github.com/L3MON4D3/LuaSnip
+[submodule "knap"]
+	path = .local/share/nvim/site/pack/plugins/start/knap
+	url = https://github.com/frabjous/knap.git
